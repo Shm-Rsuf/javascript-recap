@@ -64,3 +64,50 @@ const restaurant = {
 };
 
 console.log(restaurant); */
+
+// 08. Optional Chaining (?.)
+/* const obj = {
+  title: "javaScript",
+  frameworks: [
+    {
+      dist: "angular",
+      mata: "unknown",
+      year: 2010,
+    },
+    {
+      dist: "vue",
+      mata: {
+        title: "mata",
+      },
+      year: 2015,
+    },
+  ],
+};
+
+console.log(obj.frameworks[1].mata?.title?.name); */
+
+// 09. Looping Objects: Object Keys, Values, and Entries
+/* const player = {
+  name: "Messi",
+  country: "Argentina",
+  goals: 800,
+  awards: "unknown",
+};
+const playerKeys = Object.keys(player);
+const playerValues = Object.values(player);
+const playerEntries = Object.entries(player);
+// 10. Looping Arrays: The for-of Loop
+for (const key of playerKeys) {
+  // console.log(key);
+}
+
+for (const value of playerValues) {
+  // console.log(value);
+}
+
+for (let [key, value] of playerEntries) {
+  console.log(key, value);
+} */
+// 11. Primitives vs. Objects (Primitive vs. Reference Types)
+// 12. The this Keyword
+// 13. Regular Functions vs. Arrow Functions
