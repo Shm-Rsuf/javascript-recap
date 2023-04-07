@@ -110,4 +110,35 @@ for (let [key, value] of playerEntries) {
 } */
 // 11. Primitives vs. Objects (Primitive vs. Reference Types)
 // 12. The this Keyword
+/* var birthYear = 2002;
+const student1 = {
+  name: "Atik",
+  birthYear: 1996,
+  calcAge: () => {
+    console.log(new Date().getFullYear() - this.birthYear);
+  },
+};
+const student2 = {
+  name: "Jony",
+  birthYear: 1999,
+  calcAge: student1.calcAge,
+};
+
+// student1.calcAge();
+student2.calcAge(); */
 // 13. Regular Functions vs. Arrow Functions
+/* function power(a, b = 0) {
+  return a ** b;
+}
+console.log(power(2));
+
+const product = function (a, b) {
+  return a * b;
+};
+console.log(product(5, 6));
+
+const diff = (a, b) => {
+  return a - b;
+};
+console.log(diff(10, 5));
+ */
