@@ -142,3 +142,7 @@ const diff = (a, b) => {
 };
 console.log(diff(10, 5));
  */
+
+// const add = (a, b) => {
+//   return a + b;
+// };
