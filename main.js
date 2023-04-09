@@ -142,8 +142,3 @@ const diff = (a, b) => {
 };
 console.log(diff(10, 5));
  */
-
-const add = (a, b, ...rest) => {
-  return a + b;
-};
-console.log(add([5, 10, 15, 20]));
