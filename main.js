@@ -142,3 +142,19 @@ const diff = (a, b) => {
 };
 console.log(diff(10, 5));
  */
+
+/* function double(num) {
+  return num * 2;
+}
+
+function triple(num) {
+  return num * 3;
+}
+
+function transformer(num, fn) {
+  return fn(num);
+}
+
+console.log(transformer(5, double));
+console.log(transformer(5, triple));
+ */
