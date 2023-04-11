@@ -200,3 +200,60 @@ const person3 = {
 // console.log(person1.calcAge.apply(person2, [person2.name]));
 let bind = person1.calcAge.bind(person3, person3.name);
 console.log(bind()); */
+
+// 20. Sets
+/* let mySet = new Set();
+mySet.add(5);
+mySet.add(4);
+mySet.add(7);
+mySet.add("true");
+mySet.delete(4);
+console.log(mySet);
+
+const arr = [1, 2, 4, 4, 5, 6, 6, 6, 1, 3, 4, 5, 6, 2, 2, 2];
+const uniqueSet = [...new Set(arr)];
+console.log(uniqueSet);
+ */
+
+// 01. Array: length
+// console.log(arr.length);
+// 02. Array.prototype.at()
+// console.log(arr.at(2));
+// console.log(arr.at(-1));
+// 03. Array.prototype.concat()
+/* const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9];
+const arr3 = [2, 2, 2, 2, 2, 2];
+const addArr = arr1.concat(arr2, arr3);
+const spreadArr = [...arr1, ...arr2, ...arr3];
+console.log("spread", spreadArr);
+console.log("concat", addArr);
+const uniqueSet = [...new Set(spreadArr)];
+console.log("uniqueSet", uniqueSet); */
+// 04. Array.prototype.every()
+// const isFiveMod = nums.every((num) => num % 5 === 0);
+// const isThreeMod = nums.every((num) => num % 3 === 0);
+// console.log("isThreeMod", isThreeMod);
+// console.log("isFiveMod", isFiveMod);
+
+// 05. Array.prototype.filter()
+// const filterArr = nums.filter((num) => num % 3 === 0 && num % 4 === 0);
+// console.log("filterArr", filterArr);
+// 06. Array.prototype.find()
+
+// const isThreeMod = nums.find((num) => num % 3 === 0 && num % 6 !== 0);
+// console.log("isThreeMod", isThreeMod);
+// 07. Array.prototype.findIndex()
+// const isIndex = nums.findIndex((num) => num % 3 === 0 && num % 6 !== 0);
+// console.log("isIndex =", isIndex);
+// 08. Array.prototype.forEach()
+// nums.forEach((num) => {
+//   console.log(num * 3);
+// });
+
+// 09. Array.prototype.includes()
+const nums = [12, 21, 25, 36, 40, 54];
+// console.log("isInclude =", nums.includes(21));
+// 10. Array.prototype.indexOf()
+// console.log(nums.indexOf(30));
+// console.log(nums.indexOf(36));
