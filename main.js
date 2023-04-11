@@ -158,3 +158,45 @@ function transformer(num, fn) {
 console.log(transformer(5, double));
 console.log(transformer(5, triple));
  */
+// 16. Functions Returning Functions
+/* function test(a) {
+  return function (b) {
+    return function (c) {
+      return a + b + c;
+    };
+  };
+}
+console.log(test(5)(8)(7));
+
+const test2 = (a) => (b) => (c) => (d) => a + b + c + d; //lambda function
+console.log(test2(5)(8)(4)(8)); */
+
+// 17. Immediately Invoked Function Expressions (IIFE)
+/* (function once() {
+  console.log("I Am Immediately Invoked Function Expressions");
+})(); */
+
+// 18. The call, apply and bind Methods
+/* const person1 = {
+  name: "smith",
+  birthYear: 1999,
+  calcAge(name) {
+    return `${new Date().getFullYear() - this.birthYear} ${name}`;
+  },
+};
+
+const person2 = {
+  name: "Harry",
+  birthYear: 1990,
+};
+
+const person3 = {
+  name: "Jony",
+  birthYear: 1997,
+};
+
+// console.log(person1.calcAge());
+// console.log(person1.calcAge.call(person2, person2.name));
+// console.log(person1.calcAge.apply(person2, [person2.name]));
+let bind = person1.calcAge.bind(person3, person3.name);
+console.log(bind()); */
