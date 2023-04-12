@@ -77,3 +77,10 @@
 // // parseFloat();
 // const ans = parseFloat(width);
 // console.log(ans); //10.5
+
+//geoLocation
+/* navigator.geolocation.getCurrentPosition((position) => {
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+  console.log("lat =", lat, "lon =", lon);
+}); */
