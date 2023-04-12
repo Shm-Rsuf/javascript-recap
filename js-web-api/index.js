@@ -29,3 +29,51 @@
 // Math.trunc()
 // console.log(Math.trunc(2.7)); //2
 // console.log(Math.trunc(5.4)); //5
+
+// new Date();
+// const myDate = new Date();
+// console.log(myDate);
+// Date.now();
+// console.log(Date.now());
+// getDate();
+// console.log(myDate.getDate());
+// getDay();
+// console.log(myDate.getDay());
+// getFullYear();
+// console.log(myDate.getFullYear());
+// getHours();
+// console.log(myDate.getHours());
+// getMinutes();
+// console.log(myDate.getMinutes());
+// getSeconds();
+// console.log(myDate.getSeconds());
+// getMilliseconds();
+// console.log(myDate.getMilliseconds());
+// getMonth();
+// console.log(myDate.getMonth());
+// number.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+/* console.log(
+  myDate.toLocaleString("bn-BD", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  })
+); */
+
+//currency formater
+// const money = 149.95;
+// const currencyFormater = money.toLocaleString("en-US", {
+//   style: "currency",
+//   currency: "EUR",
+// });
+
+// console.log(currencyFormater);
+
+// parseInt();
+// const width = "10.5px";
+// const ans = parseInt(width);
+// console.log(typeof ans);//10
+// // parseFloat();
+// const ans = parseFloat(width);
+// console.log(ans); //10.5
