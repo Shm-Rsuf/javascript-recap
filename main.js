@@ -252,8 +252,49 @@ console.log("uniqueSet", uniqueSet); */
 // });
 
 // 09. Array.prototype.includes()
-const nums = [12, 21, 25, 36, 40, 54];
 // console.log("isInclude =", nums.includes(21));
 // 10. Array.prototype.indexOf()
 // console.log(nums.indexOf(30));
 // console.log(nums.indexOf(36));
+
+// 11. Array.isArray()
+// 12. Array.prototype.join()
+/* const str = "MoMiN";
+const splitedStr = str.split("");
+const upperStr = splitedStr.map((letter) => {
+  return letter.toUpperCase();
+});
+const joinedStr = upperStr.join("");
+console.log(joinedStr); */
+// 13. Array.prototype.map()
+// 14. Array.prototype.pop()
+// 15. Array.prototype.push()
+// 16. Array.prototype.reduce()
+/* const evenNumbers = nums.filter((num) => num % 2 === 0);
+
+const result = evenNumbers.reduce((sum, num) => {
+  return (sum += num);
+}, 0);
+console.log("evenNumbers =", evenNumbers);
+console.log("result =", result); */
+
+// 17. Array.prototype.reverse()
+/* const reverseNumbers = nums.reverse();
+console.log(reverseNumbers); */
+// 18. Array.prototype.shift()
+// 19. Array.prototype.slice()
+/* const slicedNum = nums.slice(1, 5);
+console.log("slicedNum =", slicedNum);
+console.log(nums); */
+// 20. Array.prototype.some()
+/* const someNum = nums.some((num) => num % 2 === 0);
+console.log("someNum =", someNum); */
+// 21. Array.prototype.sort()
+/* const sortNum = nums.sort((a, b) => a - b);
+console.log("sortNum =", sortNum); */
+// 22. Array.prototype.splice()
+// const nums = [14, 21, 15, 36, 40, 34, 55];
+/* const splicedNum = nums.splice(1, 4);
+console.log("splicedNum =", splicedNum);
+console.log(nums); */
+// 23. Array.prototype.unshift()
