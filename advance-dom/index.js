@@ -77,3 +77,11 @@ function animate() {
 }
 
 animate(); */
+
+//event deligation
+/* const list = document.querySelector(".list");
+list.addEventListener("click", (e) => {
+  if (e.target.nodeName === "LI") {
+    console.log(e.target.textContent);
+  }
+}); */
