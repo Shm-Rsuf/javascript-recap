@@ -5,6 +5,8 @@ const frame = document.querySelector(".frame");
 const prevBtn = document.querySelector(".previous-btn");
 const nextBtn = document.querySelector(".next-btn");
 const navLinks = document.querySelector(".nav-links");
+const header = document.querySelector("header");
+const slider = document.querySelector(".slider");
 
 /* SMOOTH SCROLLING */
 navLinks.addEventListener("click", (e) => {
@@ -44,3 +46,25 @@ nextBtn.addEventListener("click", () => {
     transformFrame(currentSlide);
   }
 });
+
+/* STICKY NAVBAR */
+const navHeight = header.getBoundingClientRect().height;
+
+function stickyNab(entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    header.classList.add("myNavFixed");
+    slider.classList.add(`mt-[${navHeight}px]`);
+  } else {
+    header.classList.remove("myNavFixed");
+    slider.classList.remove(`mt-[${navHeight}px]`);
+  }
+}
+
+const sliderObserver = new IntersectionObserver(stickyNab, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+
+sliderObserver.observe(slider);
