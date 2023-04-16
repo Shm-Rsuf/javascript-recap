@@ -11,10 +11,10 @@
   </head>
   <body>
     <header
-      class="h-20 flex backdrop-blue-xl justify-between items-center bg-rose-100"
+      class="h-20 flex backdrop-blue-xl justify-between items-center border-b"
     >
       <div
-        class="container mx-auto px-5 md:px-0 h-20 flex justify-between items-center bg-rose-100"
+        class="container mx-auto px-5 md:px-0 h-20 flex justify-between items-center"
       >
         <div class="logo">
           <a href="#"
@@ -46,13 +46,81 @@
           </ul>
         </nav>
         <button
-          class="btns btn-primary bg-sky-500 py-2 px-6 rounded-full hover:bg-sky-600 duration-300"
+          class="btns btn-primary bg-sky-500 py-2 px-6 rounded-full hover:bg-sky-600 hover:text-rose-50 font-medium duration-300"
         >
           Get Started
         </button>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="slider h-[calc(100vh-5rem)] overflow-x-hidden relative">
+        <div class="frame flex w-[300vw] h-full">
+          <div class="slide w-screen h-full">
+            <img
+              src="https://images.pexels.com/photos/8438982/pexels-photo-8438982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="A Woman Smelling a Red Flower while Staring at a Robot"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="slide w-screen h-full">
+            <img
+              src="https://images.pexels.com/photos/3987066/pexels-photo-3987066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Person Working Remotely"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="slide w-screen h-full">
+            <img
+              src="https://images.pexels.com/photos/5380678/pexels-photo-5380678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Man in Black Hoodie Eating His Snack in Front of the Computer"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div
+          class="controllers absolute left-[50%] bottom-32 -translate-x-[50%] flex gap-10"
+        >
+          <button
+            class="btn previous-btn border h-10 w-20 flex justify-center items-center bg-transfarent text-gray-50 border-gray-500 hover:bg-gray-900 duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="btn next-btn border h-10 w-20 flex justify-center items-center bg-transfarent text-gray-50 border-gray-500 hover:bg-gray-900 duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
