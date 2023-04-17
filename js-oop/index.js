@@ -31,5 +31,34 @@ const person1 = new Person("shm usuf", 26);
 // console.log(Person.__proto__);
 // console.log(person1.prototype); */
 
-// 05. Prototypal Inheritance and The Prototype Chain
+/* 05. Prototypal Inheritance and The Prototype Chain */
+/* CONSTRUCTOR 1 */
+/* function Animal(name) {
+  this.name = name;
+}
+
+//Prototype for Constructor 1
+Animal.prototype.greet = function () {
+  return `Hello ${this.name}`;
+}; */
+
+/* CONSTRUCTOR 2 */
+/* function Cat(name, birthYear) {
+  Animal.call(this, name);
+  this.birthYear = birthYear;
+}
+//Prototype for Constructor 2
+Cat.prototype = Object.create(Animal.prototype);
+
+Cat.prototype.calcAge = function () {
+  return `calculated age is :${new Date().getFullYear() - this.birthYear}`;
+};
+
+//instances
+const cat1 = new Cat("tom", 2020);
+console.log(cat1.name);
+console.log(cat1.calcAge());
+console.log(cat1.birthYear);
+console.log(cat1.greet()); */
+
 // 06. Prototypal Inheritance on Built-In Objects
