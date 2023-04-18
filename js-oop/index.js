@@ -62,3 +62,33 @@ console.log(cat1.birthYear);
 console.log(cat1.greet()); */
 
 // 06. Prototypal Inheritance on Built-In Objects
+
+/* 07. ES6 Classes */
+/* class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  greet() {
+    return `Hello, ${this.name}`;
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, birthYear) {
+    super(name);
+    this.birthYear = birthYear;
+  }
+
+  calcAge() {
+    return `${new Date().getFullYear() - this.birthYear} years.`;
+  }
+}
+
+const cat1 = new Cat("Cutty", 2021);
+const animal1 = new Animal("Doggy");
+
+// console.log(cat1.calcAge());
+// console.log(cat1.greet());
+
+console.log(animal1.greet()); */
+// console.log(animal1.calcAge()); //error
