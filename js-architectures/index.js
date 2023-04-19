@@ -34,3 +34,20 @@ circle1.radius = -10;
 // console.log(circle1._radius);
 // console.log(circle1.area);
 // console.log(circle1.perimeter); */
+
+/* STATIC PROPERTY */
+/* class Calculations {
+  constructor() {}
+
+  static add(a, b) {
+    return a + b;
+  }
+
+  static multiplication(a, b) {
+    return a * b;
+  }
+}
+
+// const cal1 = new Calculations()
+console.log(Calculations.add(4, 6));
+ */
