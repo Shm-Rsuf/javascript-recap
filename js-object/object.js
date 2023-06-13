@@ -11,7 +11,7 @@
 
 console.log(person.display()); */
 
-const person = {
+/* const person = {
   firstName: "John",
   lastName: "Doe",
   age: 30,
@@ -19,4 +19,4 @@ const person = {
 
 for (let properties in person) {
   console.log(properties);
-}
+} */
