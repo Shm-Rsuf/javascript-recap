@@ -1,4 +1,4 @@
-const getData = async () => {
+/* const getData = async () => {
   try {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     if (!res.ok) throw new Error("Data not fetched");
@@ -9,3 +9,4 @@ const getData = async () => {
   }
 };
 getData();
+ */
