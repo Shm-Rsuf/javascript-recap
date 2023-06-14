@@ -42,7 +42,7 @@ console.log(climbStairs(4)); */
  * @param {number} num
  * @return {boolean}
  */
-var isPerfectSquare = function (num) {
+/* var isPerfectSquare = function (num) {
   let seuareRoot = num ** 0.5;
   if (seuareRoot % 1 === 0) {
     return true;
@@ -51,4 +51,10 @@ var isPerfectSquare = function (num) {
 };
 
 console.log(isPerfectSquare(16));
-console.log(isPerfectSquare(14));
+console.log(isPerfectSquare(14)); */
+
+/* var repeatedSubstringPattern = function (s) {
+  return s.repeat(2).slice(1, -1).includes(s);
+};
+
+console.log(repeatedSubstringPattern("abcabcabcabc")); */
