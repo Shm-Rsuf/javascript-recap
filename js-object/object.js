@@ -58,3 +58,31 @@ console.log(isPerfectSquare(14)); */
 };
 
 console.log(repeatedSubstringPattern("abcabcabcabc")); */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+/* var missingNumber = function (nums) {
+  let length = nums.length;
+  return (length * (length + 1)) / 2 - nums.reduce((a, b) => a + b, 0);
+};
+
+console.log(missingNumber([3, 0, 1])); */
+
+/* var reverseString = function (s) {
+  let left = 0;
+  let right = s.length - 1;
+
+  while (left < right) {
+    const temp = s[left];
+    s[left] = s[right];
+    s[right] = temp;
+
+    left++;
+    right--;
+  }
+  return s;
+};
+console.log(reverseString(["h", "e", "l", "l", "0"]));
+console.log(reverseString(["H", "a", "n", "n", "a", "h"])); */
