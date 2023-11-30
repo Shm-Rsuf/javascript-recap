@@ -86,3 +86,17 @@ console.log(missingNumber([3, 0, 1])); */
 };
 console.log(reverseString(["h", "e", "l", "l", "0"]));
 console.log(reverseString(["H", "a", "n", "n", "a", "h"])); */
+
+var isPalindrome = function (s) {
+  if (s === " ") return true;
+
+  let string1 = s.split("");
+  let string2 = s.split("").reverse();
+  for (let i = 0; i < s.length; i++) {
+    if (string1[i] === string2[i]) {
+      return true;
+    }
+  }
+  return false;
+};
+console.log(isPalindrome("a man"));
