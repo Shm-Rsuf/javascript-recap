@@ -45,25 +45,35 @@ const arr = [1, 2, 3, 4, 5];
 // console.log([...new Set(duplicateArr)]);
 
 /* compare two array by value */
-const hasSameElement=(a, b)=>{
-  return a.length === b.length && a.every((val, i)=> val === b[i]);
-}
+// const hasSameElement=(a, b)=>{
+//   return a.length === b.length && a.every((val, i)=> val === b[i]);
+// }
 
-console.log(hasSameElement([1, 3, 4],[1, 3, 4]));
+// console.log(hasSameElement([1, 3, 4],[1, 3, 4]));
 
 /* suffling array */
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.sort(()=>Math.random()-.5));
-/* comma operator in javascript */
-let x = 1;
-x = (x++, x+3);
-console.log(x);
+// console.log(numbers.sort(()=>Math.random()-.5));
+// /* comma operator in javascript */
+// let x = 1;
+// x = (x++, x+3);
+// console.log(x);
 
-const a = Array.from({ length: 10 }, () =>
-  Array.from({ length: 10 }, Math.random),
-); // A 10×10 array of random numbers
+// const a = Array.from({ length: 10 }, () =>
+//   Array.from({ length: 10 }, Math.random),
+// A 10×10 array of random numbers
 
-for (let i = 0, j = 9; i <= 9; i++, j--) {
-  console.log(`a[${i}][${j}] = ${a[i][j]}`);
+// for (let i = 0, j = 9; i <= 9; i++, j--) {
+//   console.log(`a[${i}][${j}] = ${a[i][j]}`);
+// }
+
+/* ============== */
+// console.log("Bangladesh".__proto__.__proto__.__proto__);
+
+const myFunc = function(){
+  console.log(arguments);
+  return [].slice.call(arguments).sort();
 }
+
+console.log(myFunc(1, 4, 2, 5, 3));
