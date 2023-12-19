@@ -51,35 +51,70 @@
 // console.log(sortByWord(str));
 
 /* event deligation */
-const list = document.querySelector(".list");
+// const list = document.querySelector(".list");
 
 
-list.addEventListener("click",(e)=>{
+// list.addEventListener("click",(e)=>{
   
-  if(e.target.matches("li")){
-    if(e.target.innerText === "Java"){
-      e.target.style.backgroundColor = "red";
-    }
+//   if(e.target.matches("li")){
+//     if(e.target.innerText === "Java"){
+//       e.target.style.backgroundColor = "red";
+//     }
 
-    else if(e.target.innerText === "react"){
-      e.target.style.backgroundColor = "blue";
-    }
+//     else if(e.target.innerText === "react"){
+//       e.target.style.backgroundColor = "blue";
+//     }
 
-    else if(e.target.innerText === "python"){
-      e.target.style.backgroundColor = "yellow";
-    }
+//     else if(e.target.innerText === "python"){
+//       e.target.style.backgroundColor = "yellow";
+//     }
 
-    else if(e.target.innerText === "Php"){
-      e.target.style.backgroundColor = "green";
-    }
-    else{
-      e.target.style.backgroundColor = "purple";
-    }
-  }
-})
+//     else if(e.target.innerText === "Php"){
+//       e.target.style.backgroundColor = "green";
+//     }
+//     else{
+//       e.target.style.backgroundColor = "purple";
+//     }
+//   }
+// })
 
-function addElement(){
-  const newEl = document.createElement("li");
-  newEl.textContent = "next.js";
-  list.appendChild(newEl);
+// function addElement(){
+//   const newEl = document.createElement("li");
+//   newEl.textContent = "next.js";
+//   list.appendChild(newEl);
+// }
+
+/* ++++++++++++++ */
+// function delay(i){
+//   return new Promise(resolve=>{
+//     setTimeout(() => {
+//       resolve(i);
+//     }, i*1000);
+//   })
+// }
+
+
+// async function timer(n){
+// console.log("timer starts");
+// for(let i = 0;i<=n; i++){
+//   let result = await delay(i);
+//   console.log(result);
+// }
+// console.log("timer ends");
+// }
+
+// timer(3)
+
+/* js interview questions analysis */
+
+const employee1 = { firstName: "John", lastName: "Rodson" };
+const employee2 = { firstName: "Jimmy", lastName: "Baily" };
+
+function invite(greeting1, greeting2) {
+  console.log(
+    greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2
+  );
 }
+
+invite.call(employee1, "Hello", "How are you?"); // Hello John Rodson, How are you?
+invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
