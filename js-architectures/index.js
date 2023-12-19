@@ -51,3 +51,20 @@ circle1.radius = -10;
 // const cal1 = new Calculations()
 console.log(Calculations.add(4, 6));
  */
+
+/* template literal in javascript */
+let name = "usuf ali",
+  age = 27,
+  job = "vivasoft";
+
+console.log(`My name is ${name}. I\'m ${age} years old & I work at ${job}`);
+
+const myInfo = {
+  name: "usuf ali momin",
+  age: 27,
+  job: "ollyo bangladesh",
+};
+
+console.log(
+  `My name is ${myInfo.name}. I\'m ${myInfo.age} years old & I work at ${myInfo.job}`
+);
