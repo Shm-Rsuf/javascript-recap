@@ -127,3 +127,16 @@ console.log(Calculations.add(4, 6));
 // // numbers.push(newNumber);
 // numbers = [...numbers, newNumber];
 // console.log(numbers);
+
+// const obj1 = {
+//   key1: "value1",
+//   key2: "value2",
+// };
+
+// const obj2 = {
+//   key1: "value1",
+//   key2: "value2",
+// };
+
+// const obj3 = { ...obj1, ...obj2 };
+console.log(obj3);
