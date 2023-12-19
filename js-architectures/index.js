@@ -118,5 +118,12 @@ console.log(Calculations.add(4, 6));
 // }
 // letTest();
 
-console.log(`${d ? d : -1}`);
-var d = 7;
+// console.log(`${d ? d : -1}`);
+// var d = 7;
+
+/* Spread Operator */
+// let numbers = [1, 2, 3, 4, 5];
+// let newNumber = 6;
+// // numbers.push(newNumber);
+// numbers = [...numbers, newNumber];
+// console.log(numbers);
