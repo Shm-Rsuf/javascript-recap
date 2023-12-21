@@ -139,4 +139,39 @@ console.log(Calculations.add(4, 6));
 // };
 
 // const obj3 = { ...obj1, ...obj2 };
-console.log(obj3);
+// console.log(obj3);
+
+// const obj = {
+//   name: "abc",
+//   loc: "bd",
+// };
+
+// const newObj = Object.assign(obj, { type: "company" });
+// newObj.name = "rafi";
+// console.log(newObj);
+
+// console.log(obj);
+
+/* Rest Parameter */
+// function addAllArgs(...args) {
+//   return args.reduce((preVal, curVal) => {
+//     return preVal + curVal;
+//   });
+// }
+
+// console.log(addAllArgs(1, 3));
+// console.log(addAllArgs(1, 3, 4));
+// console.log(addAllArgs(1, 3, 6, 5));
+
+/* Default Parameter */
+// const typeCheck = (number = 1) => {
+//   return typeof number;
+// };
+
+// console.log(typeCheck(1));
+// console.log(typeCheck("1"));
+// console.log(typeCheck(""));
+// console.log(typeCheck(undefined));
+// console.log(typeCheck(null));
+// console.log(typeCheck(false));
+// console.log(typeCheck(NaN));
