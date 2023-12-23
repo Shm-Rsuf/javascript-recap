@@ -198,3 +198,29 @@ console.log(Calculations.add(4, 6));
 // const firstOrderFunc = () => console.log("Hello, I am a First order function");
 // const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
 // higherOrder(firstOrderFunc);
+
+/* Constructor function in javascript */
+// function Bike(model, color) {
+//   this.model = model;
+//   this.color = color;
+// }
+
+// Bike.prototype.getFulInfo = function () {
+//   return this.model + " bike has " + this.color + " color";
+// };
+
+// let suzuki = new Bike("Suzuki", "yellow");
+// console.log(suzuki.getFulInfo());
+
+// class Bike {
+//   constructor(model, color) {
+//     this.model = model;
+//     this.color = color;
+//   }
+//   getFulInfo() {
+//     return `${this.model} bike has ${this.color} color`;
+//   }
+// }
+
+// const suzuki = new Bike("suzuki", "black");
+// console.log(suzuki.getFulInfo());
