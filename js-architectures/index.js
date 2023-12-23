@@ -175,3 +175,23 @@ console.log(Calculations.add(4, 6));
 // console.log(typeCheck(null));
 // console.log(typeCheck(false));
 // console.log(typeCheck(NaN));
+
+/* Call, Apply, Bind methond in Javascript */
+// const messi = {
+//   fName: "lionel",
+//   lName: "messi",
+// };
+
+// const virat = {
+//   fName: "virat",
+//   lName: "kohli",
+// };
+
+// function invite(greet1, greet2) {
+//   console.log(`${greet1}, ${this.fName} ${this.lName}, ${greet2}`);
+// }
+
+// invite.call(messi, "Hello", "How are you?");
+// invite.call(messi, "Hello", "How are you?");
+
+/* Higher order function in Javascript */
