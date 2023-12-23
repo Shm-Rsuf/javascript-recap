@@ -195,3 +195,6 @@ console.log(Calculations.add(4, 6));
 // invite.call(messi, "Hello", "How are you?");
 
 /* Higher order function in Javascript */
+// const firstOrderFunc = () => console.log("Hello, I am a First order function");
+// const higherOrder = (ReturnFirstOrderFunc) => ReturnFirstOrderFunc();
+// higherOrder(firstOrderFunc);
