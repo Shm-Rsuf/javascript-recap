@@ -224,3 +224,21 @@ console.log(Calculations.add(4, 6));
 
 // const suzuki = new Bike("suzuki", "black");
 // console.log(suzuki.getFulInfo());
+
+/* Promises in Javascript */
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("I'm not a promise");
+//   }, 500);
+// });
+
+// promise.then((value) => console.log(value));
+// promise.catch((reason) => console.log(reason));
+
+/* isNaN in javascript */
+console.log(isNaN("hello"));
+console.log(isNaN(" "));
+console.log(isNaN(true));
+console.log(isNaN(false));
+console.log(isNaN(100));
+console.log(isNaN("100"));
