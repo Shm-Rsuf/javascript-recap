@@ -12,8 +12,8 @@
 // console.log(value);
 
 /* make a function that sorts its arguments without using loops */
-const myFunction = function () {
-  return [].slice.call(arguments).sort();
-};
+// const myFunction = function () {
+//   return [].slice.call(arguments).sort();
+// };
 
-console.log(myFunction(1, 4, 5, 2, 3));
+// console.log(myFunction(1, 4, 5, 2, 3));
